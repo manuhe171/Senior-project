@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2018 at 04:19 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: Mar 05, 2023 at 04:55 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -45,7 +44,8 @@ CREATE TABLE `complaint` (
 --
 
 INSERT INTO `complaint` (`c_id`, `a_no`, `location`, `type_crime`, `d_o_c`, `description`, `inc_status`, `pol_status`, `p_id`) VALUES
-(1, 123214521452, 'Tollygunge', 'Robbery', '2018-12-06', 'My Home has been Robbed.', 'Assigned', 'ChargeSheet Filed', 't101');
+(1, 123214521452, 'Tollygunge', 'Robbery', '2018-12-06', 'My Home has been Robbed.', 'Assigned', 'ChargeSheet Filed', 't101'),
+(2, 123214521452, 'Anandapur', 'Theft', '2023-03-05', 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv', 'Unassigned', 'null', 'Null');
 
 -- --------------------------------------------------------
 
@@ -84,7 +84,7 @@ CREATE TABLE `police` (
 --
 
 INSERT INTO `police` (`p_name`, `p_id`, `spec`, `location`, `p_pass`) VALUES
-('Manish Singh', 'a101', 'Murder', 'Anandapur', 'manish'),
+('yoseph', '01', 'police', 'Akaki kality', '123456'),
 ('Jay Singh', 'a102', 'All', 'Anandapur', 'jay'),
 ('Suvendu Ghosh', 't101', 'Robbery', 'Tollygunge', 'suvendu');
 
@@ -112,12 +112,32 @@ INSERT INTO `police_station` (`i_id`, `i_name`, `location`, `i_pass`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `taker`
+--
+
+CREATE TABLE `taker` (
+  `T_id` varchar(200) NOT NULL,
+  `T_pass` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `taker`
+--
+
+INSERT INTO `taker` (`T_id`, `T_pass`) VALUES
+('joss', '123456'),
+('joss@12', '1234'),
+('joss@12', '1234');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `update_case`
 --
 
 CREATE TABLE `update_case` (
   `c_id` int(11) NOT NULL,
-  `d_o_u` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `d_o_u` timestamp NOT NULL DEFAULT current_timestamp(),
   `case_update` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -155,7 +175,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`u_name`, `u_id`, `u_pass`, `u_addr`, `a_no`, `gen`, `mob`) VALUES
-('Satyansh Kumar', 'satyansh123@gmail.com', 'satyansh', 'Ranchi', 123214521452, 'Male', 9854123654);
+('Yoseph Negash', 'yosephn22@gmail.com', '123456', 'Addis Ababa', 123214521452, 'Male', 947461118);
 
 --
 -- Indexes for dumped tables
@@ -202,7 +222,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

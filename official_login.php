@@ -66,6 +66,18 @@
                 </div>
             </div>
 
+
+
+            <div class="col-md-4 col-sm-12 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Taker Login</h3>
+                        <p>
+                            <a href="Takerlogin.php" class="btn btn-primary">Taker Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 </div>
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>

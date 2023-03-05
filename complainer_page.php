@@ -132,8 +132,8 @@ if(isset($_POST['s'])){
 			<br><br>
 			<div class="login-form"><p><h2 style="color:white">Welcome <?php echo "$u_name" ?></h2></p><br>
                                     <p><h2>Log New Complain</h2></p><br>	
-				<form action="#" method="post" style="color: gray">Aadhar
-					<input type="text"  name="aadhar_number" placeholder="Aadhar Number" required="" disabled value=<?php echo "$a_no"; ?>>
+				<form action="#" method="post" style="color: gray">ID Number
+					<input type="text"  name="aadhar_number" placeholder="aadhar Number" required="" disabled value=<?php echo "$a_no"; ?>>
 					
 				<div class="top-w3-agile" style="color: gray">Location of Crime
                     
@@ -185,7 +185,7 @@ if(isset($_POST['s'])){
    background-color: rgba(0,0,0,0.8);
    color: white;
    text-align: center;">
-  <h4 style="color: white;">&copy <b>Suman MH</b></h4>
+  <h4 style="color: white;">&copy <b>On_The_Go Incident Reporter</b></h4>
 </div>
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

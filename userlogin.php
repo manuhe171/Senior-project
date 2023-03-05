@@ -65,13 +65,13 @@ var x3=sta3.indexOf(' ');
 	<title>Complainant Login</title>
 </head>
 <body style="background-size: cover;
-    background-image: url(regi_bg.jpeg);
+    background-image: url(regi_bg.jpg);
     background-position: center;">
 	<nav class="navbar navbar-default navbar-fixed-top" style="height: 60px;">
   <div class="container">
     <div class="navbar-header">
      
-      <a class="navbar-brand" href="home.php" style="margin-top: 5%;"><b>Crime Portal</b></a>
+      <a class="navbar-brand" href="home.php" style="margin-top: 5%;"><b>On_The_Go Incident Reporter</b></a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -105,7 +105,7 @@ var x3=sta3.indexOf(' ');
    background-color: rgba(0,0,0,0.7);
    color: white;
    text-align: center;">
-  <h4 style="color: white;">&copy <b>Suman MH</b></h4>
+  <h4 style="color: white;">&copy <b> On_The_Go Incident Reporter</b></h4>
 </div>
 
 </body>
